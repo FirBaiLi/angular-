@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  font-family: '微软雅黑', Microsoft YaHei, Helvetica, Tahoma;
+  //与bootstrap一致
+  font-size: @font-size;
+  color: @font-color-dark;
+  padding:0;
+  margin:0
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:link, &:visited {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+ol, ul, li {
+  list-style-type: none;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6, input[type="radio"], input[type="checkbox"], label, button, hr {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+//按钮
+button {
+  display: inline-block;
+  font-size: @font-size;
+  text-align: center;
+  color: @white;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 18px;
+  background-color: @base-blue;
+  &:hover {
+    background-color: #5fadf1;
+  }
+  &:active {
+    background-color: #2c80e6;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &.yellow {
+    background-color: #ff9900;
+    &:hover, &:active {
+      background-color: #ff6600;
+    }
+    &:disabled {
+      background-color: #ddd;
+    }
+  }
+}

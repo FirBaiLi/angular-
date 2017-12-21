@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <base href="<%=webpackConfig.output.publicPath%>">
+  <!--[if lt IE 9]>
+  <!--<script src='<%=webpackConfig.output.publicPath + "vendors/html5shiv.min.js"%>'></script>-->
+  <!--<script src='<%=webpackConfig.output.publicPath + "vendors/respond.min.js"%>'></script>-->
+  <!--<![endif]&ndash;&gt;-->
+</head>
+
+<body ng-controller="applicationController">
+<div class="index-box">
+  <div ui-view="header"></div>
+  <div ui-view=""></div>
+  <div ui-view="footer"></div>
+</div>
+
+<!--公共弹出框-->
+<div uic-alert></div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div class="my_alert" ng-class={my_alert_show:alerts||mark}>
+	<div ng-repeat="alert in alerts">
+		<div class="my_alert_box">
+			<div class="my_alert_content">
+				<div class="my_alert_header">
+					<h3 ng-bind="alert.title"></h3>
+				</div>
+				
+				<div class="my_alert_body" uic-alert-width>
+					<div class="msgTitle">
+						<i class="img_{{alert.type}}"></i>
+						<div ng-bind-html="alert.msg"></div>
+					</div>
+				</div>
+				<div class="my_alert_footer">
+					<button type="button" data-types="{{btn[0]}}" ng-repeat="btn in alert.btn "
+									ng-bind="btn[1]" ng-click="alert.close($event)"></button>
+				</div>
+			</div>
+		</div>
+		<div class="my_alert_bg" ng-if="alert.cover"></div>
+	</div>
+	<div class="my_mark_bg" ng-repeat="mark in mark">
+		<div class="my_mark_box">
+			<img src="../../asset/image/loading.gif"/>
+			<span ng-bind="mark"></span>
+		</div>
+	</div>
+</div>

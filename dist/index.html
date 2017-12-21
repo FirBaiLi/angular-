@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angular练习项目</title>
+  <base href="">
+  <!--[if lt IE 9]>
+  <!--<script src='undefinedvendors/html5shiv.min.js'></script>-->
+  <!--<script src='undefinedvendors/respond.min.js'></script>-->
+  <!--<![endif]&ndash;&gt;-->
+<link href="vendors/bootstraps.min.css" rel="stylesheet"><link href="index.min.css" rel="stylesheet"></head>
+
+<body ng-controller="applicationController">
+<div class="index-box">
+  <div ui-view="header"></div>
+  <div ui-view=""></div>
+  <div ui-view="footer"></div>
+  <!--<div ui-sref="pratice.public.home">go1111</div>-->
+</div>
+
+<!--公共弹出框-->
+<div uic-alert></div>
+
+<script type="text/javascript" src="manifest.js"></script><script type="text/javascript" src="vendors/bootstraps.js"></script><script type="text/javascript" src="vendors/angulars.js"></script><script type="text/javascript" src="index.js"></script></body>
+</html>

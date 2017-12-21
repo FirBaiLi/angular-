@@ -1,0 +1,26 @@
+{
+  "name": "angular",
+  "description": "搭建ng",
+  "main": "index.js",
+  "authors": [
+    "bailili <993614427@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FirBaiLi/webpack-start",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "smalot-bootstrap-datetimepicker": "2.3.8",
+    "bootstrap": "3.3.6",
+    "store-js": "1.3.20",
+    "angular": "1.2.29",
+    "angular-print": "0.3.8",
+    "fugle-ng-grid": "^v2.0.15"
+  }
+}

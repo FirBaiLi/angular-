@@ -1,0 +1,43 @@
+<div class="lxBox">
+	<div class="banner">
+		<img src="../../asset/image/ng2.jpg" />
+		<p>PhoneCat —— 动手做一个完整的AngularJS项目</p>
+		<div>
+			<div class="btn btn-lg btn-danger" ng-click="show()">AngularJS 教程</div>
+			<div class="btn btn-lg btn-default sec" ui-sref="pratice.jc.first">查看angularJs Api</div>
+		</div>
+	</div>
+	
+  <div class="content">
+		<h2>AngularJS 模块</h2>
+		<table class="table table-hover">
+			<tr>
+				<th>模块名</th>
+				<th>描述</th>
+				<th >操作</th>
+			</tr>
+			<tr ng-repeat="v in apiData">
+				<td><a>{{v.name}}</a></td>
+				<td>{{v.expression}}</td>
+				<td style="width:90px"><button type="button" class="btn pramary" ng-click="delete()">删除</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">教程</h4>
+				</div>
+				<div class="modal-body">
+					这就是AngularJs教程
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
